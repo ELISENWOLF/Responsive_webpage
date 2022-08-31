@@ -122,7 +122,7 @@ input{
 main{
     margin-top: 5.5%;
     background-color: #F5F7FB;
-    height: 100%;
+    height: 115vh;
 }
 
 .main-head{
@@ -561,17 +561,6 @@ table{
     opacity: 1;
 }
 
-.video .thumbnail{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    z-index: 1;
-}
-
 .play-btn1{
     position: relative;
     top: 85px;
@@ -579,10 +568,11 @@ table{
     width: 24px;
     height: 24px;
     opacity: 1;
+    color: #A3A6B4;
     z-index: 2;
 }
 
-.video .thumbnail:hover{
+.play-btn1:hover{
     opacity: 0;
 }
 
@@ -595,3 +585,4 @@ table{
     object-fit: cover;
     border-radius: 10px;
 }
+

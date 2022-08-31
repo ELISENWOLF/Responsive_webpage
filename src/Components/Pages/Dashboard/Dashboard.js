@@ -12,18 +12,20 @@ import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import { RiMore2Fill } from "react-icons/ri";
+import { FaPlay } from 'react-icons/fa';
 import otherprof1 from "../logo/profile-pic-03.jpg";
 import otherprof2 from "../logo/profile-pic-02.jpg";
 import otherprof3 from "../logo/profile-pic-04.jpg";
 import clip1 from "../Videos/clip1.mp4";
 import thumbnail from "../Videos/thumbnail.png";
 import "./Dashboard.css";
+import { Donut } from "../Graphs/Donut";
 
 function Dashboard() {
 
   var clip = document.querySelectorAll('.clip')
   console.log(clip)
-  for (let i = 0; i>clip.length; i++){
+  for (let i = 0; i<clip.length; i++){
     clip[i].addEventListener('mouseenter', function(e){
       clip[i].play()
     })
@@ -35,19 +37,19 @@ function Dashboard() {
   return (
     <div className="container">
       <div className="left-container">
-        <Sidebar />
+        <Sidebar className="sidebar"/>
       </div>
       <div className="right-container">
         <header>
           <h3>
-            <label for="">
+            
               <BiMenuAltRight className="bimenu" />
               <FiSearch className="fisearch" />
               <input
                 type="search"
                 placeholder="Search transactions, invoices or help"
               />
-            </label>
+            
           </h3>
           <div className="user-wrapper">
             <IoIosNotificationsOutline className="ioio" />
@@ -90,6 +92,7 @@ function Dashboard() {
                 <div className="pie-head">
                   <span>Sales distribution</span>
                 </div>
+                <Donut />
               </div>
             </div>
             <div className="card-bottom">
@@ -223,6 +226,9 @@ function Dashboard() {
                 <RiMore2Fill className="card-right-bottom-opt" />
               </div>
               <div className="video">
+                <div className="video-btn">
+                  <FaPlay className="play-btn1" />
+                </div>
                 <video src={clip1} type="video/mp4" poster={thumbnail}  loop className="clip"/>
               </div>
             </div>
