@@ -1,16 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Source Sans Pro';
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-.App {
-    background-color: #3C3B54;
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro';
 }
 
 *::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}

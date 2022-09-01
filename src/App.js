@@ -4,7 +4,7 @@ import Dashboard from "./Components/Pages/Dashboard/Dashboard";
 import Home from "./Components/Pages/Home/Home";
 import Inbox from "./Components/Pages/Inbox/Inbox";
 import Admin from "./Components/Pages/Admin/Admin";
-import Products from "./Components/Pages/Products/Products";
+import Product from "./Components/Pages/Products/Product";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/" component={Dashboard} exact />
           <Route path="/inbox" component={Inbox} />
-          <Route path="/product" component={Products}/>
+          <Route path="/product" component={Product}/>
           <Route path="/admin" component={Admin}/>
         </Switch>
       </Router>

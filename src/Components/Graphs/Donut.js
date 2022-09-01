@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import './graphs.css'
+import './index.css'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -20,7 +20,7 @@ export const data = {
   ]
 };
 
-export function Donut() {
+function Donut() {
   return (
   <div className='donut-container'>
     <div className='sales-value'>
@@ -60,3 +60,5 @@ export function Donut() {
   </div>
   )
 }
+
+export default Donut;
