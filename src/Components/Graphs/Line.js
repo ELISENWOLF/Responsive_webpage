@@ -2,7 +2,7 @@ import React from "react";
 import {AreaChart, Area, XAxis, YAxis, 
   CartesianGrid } from 'recharts';
 
-function Line() {
+function Graphs() {
   
   const data = [
       {name:'Jan', x:19, y:15},
@@ -15,7 +15,7 @@ function Line() {
 
   return (
     <div className="graph-container">
-      <AreaChart width={400} height={250} data={data}>
+      <AreaChart width={400} height={250} data={data} id='linegraph'>
  <CartesianGrid/>
 <XAxis dataKey="name" />
 <YAxis />
@@ -28,4 +28,4 @@ function Line() {
   );
 }
 
-export default Line;
+export default Graphs;

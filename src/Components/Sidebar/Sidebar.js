@@ -11,7 +11,6 @@ import { MdOutlineExpandLess } from "react-icons/md";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsTwitter, BsFacebook, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { RiMore2Fill } from "react-icons/ri";
-import { FaPlay } from "react-icons/fa";
 import userlogo from "../Picture/profile-pic-01.jpg";
 import otherprof1 from "../Picture/profile-pic-03.jpg";
 import otherprof2 from "../Picture/profile-pic-02.jpg";
@@ -106,7 +105,7 @@ const Sidebar = () => {
           <h3>Overview</h3>
           <button>
             Add Funds
-            <AiOutlinePlus className="" />
+            <AiOutlinePlus className="plus-icon" />
           </button>
         </div>
         <div className="left">
