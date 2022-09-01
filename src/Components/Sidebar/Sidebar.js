@@ -86,7 +86,10 @@ const Sidebar = () => {
               </Link>
               <Link to="/inbox" className="nav-link">
                 <IoMailOutline />
-                <span className="nav-link-name">Inbox</span>
+                <div className="inbox-new">
+                  <span className="nav-link-name">Inbox</span>
+                  <span className="new">New</span>
+                </div>
               </Link>
               <Link to="/product" className="nav-link">
                 <CgNotes />

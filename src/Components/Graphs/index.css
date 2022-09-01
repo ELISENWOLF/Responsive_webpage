@@ -3,7 +3,7 @@
 .graph-container{
     position: relative;
     bottom: 170px;
-    right: 30px;
+    right: 35px;
     width: 100px;
     height: 100px;
 }
@@ -41,9 +41,6 @@
 .donut-share-details{
     display: flex;
     justify-content: space-between;
-}
-
-.donut-share-details{
     position: relative;
     bottom: 40px;
     right: 10px;
@@ -108,15 +105,63 @@
     justify-content: space-between;
 }
 
+.line-share{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.line-share-details{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0px;
+    left: 50px;
+    width: 131px;
+    height: 18px;
+    opacity: 1;
+}
+
+.line-share-color1,
+.line-share-color2{
+    position: relative;
+    top: 3px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.line-share-color1{
+    position: relative;
+    left: 45px;
+}
+
+.line-share-color2{
+    position: relative;
+    left: 55px;
+}
+
+.line-short-desc{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #4D4F5C;
+    opacity: 0.5;
+}
+
+.line-share-color1{
+    background-color: #B5B3FB;
+}
+
+.line-share-color2{
+    background-color: #80E2FF;
+}
+
 /* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
 
 @media screen and (max-width:1024px) {
-    
-}
-
-/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
-
-@media screen and (max-width:600px) {
     .graph-container{
         position: relative;
         bottom: 170px;
@@ -128,8 +173,46 @@
     #linegraph{
         position: relative;
         top: 20px;
+        right: 5px;
+        width: 390px;
+        height: 250px
+    }
+
+    .line-share-details{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 15px;
+        left: 50px;
+    }
+
+    /* <===== DONUT =====> */
+    
+    
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+
+@media screen and (max-width:600px) {
+    .graph-container{
+        position: relative;
+        bottom: 180px;
+        right: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    #linegraph{
         width: 290px;
         height: 250px
+    }
+
+    .line-share-details{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
     }
 
     /* <===== DONUT =====> */
