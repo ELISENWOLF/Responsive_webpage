@@ -1,0 +1,241 @@
+.notification{
+    position: absolute;
+    top: 50px;
+    right: 160px;
+    width: 430px;
+    height: 298px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px #5565751A;
+    border-radius: 15px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.notification-msg-1{
+    position: relative;
+    top: 10px;
+}
+
+
+.notification-msg-2{
+    position: relative;
+    top: 20px;
+}
+
+.notification-msg-3{
+    position: relative;
+    top: 30px;
+}
+
+.notification-msg-1,
+.notification-msg-2,
+.notification-msg-3{
+    display: flex;  
+    z-index: 2;
+}
+
+.not-detail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+
+.name{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    width: 84px;
+    height: 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #4D4F5C;
+    opacity: 1;
+}
+
+.msg{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    width: 190px;
+    height: 18px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #43425D;
+    opacity: 0.5;
+}
+
+.time{
+    position: relative;
+    top: 60px;
+    left: 90px;
+    width: 118px;
+    height: 18px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #43425D;
+    opacity: 0.5;
+}
+
+.notification-msg-1 img,
+.notification-msg-2 img,
+.notification-msg-3 img{
+    position: relative;
+    top: 35px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.not-line{
+    position: relative;
+    top: 90px;
+    border: .5px solid #5565750F;
+}
+
+.not-show{
+    position: relative;
+    top: 100px;
+    width: 65px;
+    height: 18px;
+    text-align: left;
+    font-size:  14px;
+    letter-spacing: 0px;
+    color: #3B86FF;
+    opacity: 1;
+}
+
+/*<===== LOGOUT =====>*/
+
+.logout{
+    position: absolute;
+    top: 52px;
+    right: 70px;
+    width: 210px;
+    height: 162px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px #5565751A;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.log-msg{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 66px;
+    height: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size:  16px;
+    color: #43425D;
+    opacity: 1;
+}
+
+.log-icon{
+    position: relative;
+    top: 5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: #A4AFB7;
+    opacity: 1;
+}
+
+.log-msg{
+    cursor: pointer;
+}
+
+.logout-msg-1,
+.logout-msg-2,
+.logout-msg-3{
+    margin-bottom: 20px;
+}
+
+/* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
+
+@media screen and (max-width:1024px) {
+
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+
+@media screen and (max-width:600px) {
+    .notification{
+        position: absolute;
+        top: 48px;
+        right: 80px;
+        width: 230px;
+        height: 220px;
+    }
+    
+    .notification-msg-1{
+        position: relative;
+        top: -10px;
+    }
+    
+    .notification-msg-2{
+        position: relative;
+        top: 0px;
+    }
+    
+    .notification-msg-3{
+        position: relative;
+        top: 10px;
+    }
+    
+    .name{
+        font-size: 12px;
+    }
+    
+    .msg{
+        font-size: 10px;
+    }
+    
+    .time{
+        display: none;
+    }
+    
+    .notification-msg-1 img,
+    .notification-msg-2 img,
+    .notification-msg-3 img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .not-line{
+        position: relative;
+        top: 60px;
+    }
+    
+    .not-show{
+        position: relative;
+        top: 65px;
+        font-size:  12px;
+    }
+    
+    /*<===== LOGOUT =====>*/
+    
+    .logout{
+        position: absolute;
+        top: 48px;
+        right: 40px;
+        width: 210px;
+        height: 162px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 8px #5565751A;
+        border-radius: 10px;
+        opacity: 1;
+        z-index: 2;
+    }
+}

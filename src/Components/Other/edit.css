@@ -1,0 +1,12 @@
+.pen{
+    border-radius: 50%;
+    background-color: #6763E3;
+    padding: .2rem;
+    width: 15px;
+    height: 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}

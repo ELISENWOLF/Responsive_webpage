@@ -21,6 +21,9 @@ import thumbnail from "../Picture/thumbnail.png"
 import { FiSearch } from "react-icons/fi";
 import Line from "../Graphs/Line";
 import Donut from "../Graphs/Donut";
+import Notification from "../Dropdown/Notification";
+import Logout from "../Dropdown/Logout";
+import Editicon from "../Other/Editicon";
 
 const Sidebar = () => {
   const [show, setShow] = useState(false);
@@ -36,6 +39,9 @@ const Sidebar = () => {
     })
   }
 
+  const[logdown, setLogdown] = useState(false)
+  const[notdown, setNotdown] = useState(false)
+
   return (
     <main className={show ? "space-toggle" : null}>
       <header className={`header ${show ? "space-toggle" : null}`}>
@@ -50,12 +56,14 @@ const Sidebar = () => {
           />
         </h3>
         <div className="user-wrapper">
-          <IoIosNotificationsOutline className="ioio" />
+          <IoIosNotificationsOutline className="ioio" onClick={() => setNotdown(true)} onDoubleClick={() => setNotdown(false)}/>
+          {notdown && <Notification className="notification1"/>}
           <div>
             <h4>John Doe</h4>
           </div>
-          <div className="logout-btn">
-            <MdOutlineExpandLess className="mdoutline" />
+          <div className="logout-btn" onClick={() => setLogdown(true)} onDoubleClick={() => setLogdown(false)}>
+            <MdOutlineExpandLess  className="mdoutline" />
+            {logdown && <Logout className="logout1"/>}
             <img
               src={userlogo}
               width="30px"
@@ -66,7 +74,6 @@ const Sidebar = () => {
           </div>
         </div>
       </header>
-
       <aside className={`sidebar ${show ? "show" : null}`}>
         <nav className="nav">
           <div>
@@ -209,6 +216,7 @@ const Sidebar = () => {
             <div className="user-prof">
                 <div className="user-photo">
                   <img src={userlogo} alt="" className="user-pic" />
+                  <Editicon />
                 </div>
                 <div className="user-details">
                   <span id="user-name">Nick Herasimenka</span>
