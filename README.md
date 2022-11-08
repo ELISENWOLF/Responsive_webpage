@@ -1,1 +1,1 @@
-Click here for demo:- https://mitsogoassessment.netlify.app/
+View project [Demo](https://mitsogoassessment.netlify.app/)
